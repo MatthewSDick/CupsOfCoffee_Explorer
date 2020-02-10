@@ -36,36 +36,48 @@ namespace CupsOfCoffee_Explorer
 
       Console.WriteLine("What is your name?");
       var user = Console.ReadLine();
-      Console.WriteLine("Hello " + user + " nice to meet you.");
+      DateTime rightNow = DateTime.Now;
 
-      Console.WriteLine("Hey " + user + " give me a number.");
-      var numOne = Console.ReadLine();
-      //Console.WriteLine(numOne);
+      if (user == "Alice")
+      {
+        Console.WriteLine("As of " + rightNow + " " + user + " you are not allowed to use this application");
+      }
 
-      Console.WriteLine("Now give me another number.");
-      var numTwo = Console.ReadLine();
-      //Console.WriteLine(numTwo);
-
-      var operand1 = double.Parse(numOne);
-      //Console.WriteLine(operand1);
-
-      var operand2 = double.Parse(numTwo);
-      //Console.WriteLine(operand2);
-
-      var sum = operand1 + operand2;
-      var difference = operand1 - operand2;
-      var quotient = operand1 / operand2;
-      var product = operand1 * operand2;
-      var remainder = (15 / 6);
+      else
+      {
 
 
-      Console.WriteLine(operand1 + " + " + operand2 + " = " + sum);
-      Console.WriteLine(operand1 + " - " + operand2 + " = " + difference);
-      Console.WriteLine(operand1 + " / " + operand2 + " = " + quotient);
-      Console.WriteLine(operand1 + " * " + operand2 + " = " + product);
-      Console.WriteLine("The remainder of 15/6 is " + remainder);
+
+        Console.WriteLine("Hello " + user + " nice to meet you.");
+
+        Console.WriteLine("Hey " + user + " give me a number.");
+        var numOne = Console.ReadLine();
+        //Console.WriteLine(numOne);
+
+        Console.WriteLine("Now give me another number.");
+        var numTwo = Console.ReadLine();
+        //Console.WriteLine(numTwo);
+
+        var operand1 = double.Parse(numOne);
+        //Console.WriteLine(operand1);
+
+        var operand2 = double.Parse(numTwo);
+        //Console.WriteLine(operand2);
+
+        var sum = operand1 + operand2;
+        var difference = operand1 - operand2;
+        var quotient = operand1 / operand2;
+        var product = operand1 * operand2;
+        var remainder = (15 / 6);
 
 
+        Console.WriteLine(operand1 + " + " + operand2 + " = " + sum);
+        Console.WriteLine(operand1 + " - " + operand2 + " = " + difference);
+        Console.WriteLine(operand1 + " / " + operand2 + " = " + quotient);
+        Console.WriteLine(operand1 + " * " + operand2 + " = " + product);
+        Console.WriteLine("The remainder of 15/6 is " + remainder);
+
+      }
 
 
 
